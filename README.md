@@ -4,3 +4,6 @@
 ### An application to time your timer with regular pings
 <p>Built using HTML, CSS and JavaScript.<br>
 Use Case: To help with exam revisions like Anki Cards, etc.</p>
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
