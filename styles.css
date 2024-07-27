@@ -74,6 +74,7 @@ input {
   height: 30px;
   text-align: center;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
