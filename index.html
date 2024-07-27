@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pingles! - A Countdown Timer with Pings</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="timer-container">
+    <h1>Pingles!</h1>
+    <p>A countdown timer with pings</p>
+    <div class="input-container">
+      <div id="timer">00:00:00</div>
+      <div class="time-inputs">
+        <div class="input-group">
+          <label for="hours">Hours:</label>
+          <input type="number" id="hours" min="0" value="0">
+        </div>
+        <div class="input-group">
+          <label for="minutes">Minutes:</label>
+          <input type="number" id="minutes" min="0" value="0">
+        </div>
+        <div class="input-group">
+          <label for="seconds">Seconds:</label>
+          <input type="number" id="seconds" min="0" value="0">
+        </div>
+      </div>
+      <div class="ping-interval">
+        <label for="pingInterval">Ping Interval (seconds):</label>
+        <input type="number" id="pingInterval" min="1" value="0">
+      </div>
+      <div class="button-container">
+        <button id="startButton">Start Countdown</button>
+        <button id="pauseButton">Pause Countdown</button>
+        <button id="stopButton">Stop Countdown</button>
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
+  </div>
+  <audio id="pingAudio" src="ping.mp3" preload="auto"></audio>
+  <audio id="finishAudio" src="finish.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
